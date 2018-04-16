@@ -40,12 +40,16 @@ def rev_word(word):
         else:
             new_word.append(backwards[j])  # We already made it lowercase, so we don't need to use .lower() again.
 
+    # ['Y', 'l', 'l', 'a', 's']
+    
     # Now, the punctuation.
     for j in range(0, len(word)):  # Iterate through original word
         if not word[j].isalpha():  # If the letter is not an alphabet
             new_word.insert(j, word[j])  # Insert the character at new word's index 'j'
-
-    return "".join(new_word)
+            
+    # ['Y', 'l', 'l', '.', 'a', 's', '!']
+    
+    return "".join(new_word)  # We need to return the word as a string, so use the .join() method
 
 
 # Main method
