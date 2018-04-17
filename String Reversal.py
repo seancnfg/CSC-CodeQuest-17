@@ -26,7 +26,6 @@ def rev_word(word):
     :param word: given word to reverse
     :return: the reversed word of type 'str'
     """
-    # TODO: Implement punctuation
     # Let's take the word "Sal.ly!"
 
     new_word = []
