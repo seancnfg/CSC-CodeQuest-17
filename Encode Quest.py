@@ -29,6 +29,7 @@ def encode(sent, code):
     return new_sent
 
 
+#  Main Method
 if __name__ == '__main__':
     n = int(input())
     answers = []
