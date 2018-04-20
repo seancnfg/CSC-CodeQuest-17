@@ -1,8 +1,13 @@
+"""
+TASK: Given several lines of code, shift each character of the string as if it were typed with one key shifted 
+to the left, according to a standard keyboard.
+"""
+# Keyboard strings
 up_keys = "qwertyuiop"
 mid_keys = "asdfghjkl"
 bot_keys = "zxcvbnm,."
 
-capslock = False
+capslock = False  # By default, caps lock is turned off
 
 
 def shift_line(line):
@@ -52,6 +57,7 @@ def shift_line(line):
     return "".join(new_line)
 
 
+# Main method
 if __name__ == '__main__':
     answers = []
     n = int(input())
